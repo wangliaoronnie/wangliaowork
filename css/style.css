@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes search-in {
+  0% {
+    width: 500px;
+  }
+  100% {
+    width: 800px;
+  }
+}
+body {
+  background-image: url("../image/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header h1 > span {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
+.header-navbox {
+  display: flex;
+  margin-left: 50px;
+}
+.header-navbox .nav-item {
+  height: 52px;
+  line-height: 52px;
+  padding: 0 16px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.header-navbox .nav-item:hover .nav-sub {
+  visibility: visible;
+}
+.header-navbox .nav-sub {
+  visibility: hidden;
+  min-width: 100px;
+  position: absolute;
+  top: 51px;
+  left: 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+}
+.header-navbox .nav-sub li {
+  display: flex;
+  overflow: hidden;
+}
+.header-navbox .nav-sub li a {
+  width: 100%;
+  padding: 0 8px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+.header-navbox .nav-sub li:hover {
+  background-color: rgba(102, 102, 102, 0.1);
+}
+
+.search {
+  width: 800px;
+  margin: 100px auto 30px;
+  height: 54px;
+  border: 1px solid #fff;
+  border-radius: 54px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  animation: search-in 1s ease;
+}
+.search .icon {
+  width: 30px;
+  padding: 0 10px;
+  margin-left: 2px;
+}
+.search-input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.search-input:focus {
+  outline: none;
+}
+
+.buttonbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonbox button {
+  background-color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header container">
+        <h1>
+            <img src="image/logo.png" alt="">
+            <span>Microsoft Bing</span>
+        </h1>
+        <div class="header-navbox">
+            <nav class="nav-item">
+                picture
+            </nav>
+            <nav class="nav-item">
+                video
+            </nav>
+            <nav class="nav-item">
+                more
+                <ul class="nav-sub">
+                    <li><a href="#">map</a></li>
+                    <li><a href="#">news</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search" id="search">
+            <img src="image/iconsearch.png" class="icon">
+            <input type="text" class="search-input">
+        </div>
+        <div class="buttonbox">
+            <button>search</button>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    document.getElementById('search').addEventListener('click',function() {
+        document.getElementById('search').classList.add('active')
+    })
+</script>
